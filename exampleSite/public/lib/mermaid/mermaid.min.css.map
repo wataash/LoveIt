@@ -1,9 +1,9 @@
 {
 	"version": 3,
 	"file": "mermaid.min.css",
-	"sourceRoot": "/home/wsh/hugo/LoveIt/exampleSite",
+	"sourceRoot": "/home/wsh/usr/hugo/LoveIt/exampleSite",
 	"sources": [
-		"/home/wsh/hugo/LoveIt/assets/lib/mermaid/mermaid.scss",
+		"/home/wsh/usr/hugo/LoveIt/assets/lib/mermaid/mermaid.scss",
 		"../assets/lib/mermaid/themes/neutral/index.scss",
 		"../assets/lib/mermaid/themes/mermaid.scss",
 		"../assets/lib/mermaid/themes/flowchart.scss",

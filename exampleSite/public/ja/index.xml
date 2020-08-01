@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>wataash&#39;s blog</title>
+        <link>https://blog.wataash.com/ja/</link>
+        <description>About LoveIt Theme</description>
+        <generator>Hugo -- gohugo.io</generator><language>ja</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 28 Jul 2020 17:24:54 &#43;0900</lastBuildDate>
+            <atom:link href="https://blog.wataash.com/ja/index.xml" rel="self" type="application/rss+xml" />
+        <item>
+    <title>Test Post</title>
+    <link>https://blog.wataash.com/ja/test-post/</link>
+    <pubDate>Tue, 28 Jul 2020 17:24:54 &#43;0900</pubDate>
+    <author>Author</author>
+    <guid>https://blog.wataash.com/ja/test-post/</guid>
+    <description><![CDATA[]]></description>
+</item></channel>
+</rss>

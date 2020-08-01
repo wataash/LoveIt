@@ -53,7 +53,7 @@
                     <i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="{{ . }}">{{ . }}</time>&nbsp;
                 {{- end -}}
                 <i class="fas fa-pencil-alt fa-fw"></i>&nbsp;{{ T "wordCount" .WordCount }}&nbsp;
-                <i class="far fa-clock fa-fw"></i>&nbsp;{{ T "readingTime" .ReadingTime }}&nbsp;
+                <!-- <i class="far fa-clock fa-fw"></i>&nbsp;{{ T "readingTime" .ReadingTime }}&nbsp; -->
                 {{- $comment := .Scratch.Get "comment" | default dict -}}
                 {{- if $comment.enable | and $comment.valine.enable | and $comment.valine.visitor -}}
                     <span id="{{ .RelPermalink }}" class="leancloud_visitors" data-flag-title="{{ .Title }}">
@@ -89,6 +89,65 @@
 
         {{- /* Content */ -}}
         <div class="content" id="content">
+            {{- if .IsTranslated -}}
+                <ul>
+                    {{- range .Translations -}}
+<!-- https://gohugo.io/variables/page/ -->
+<!-- <ul>
+<li>.AlternativeOutputFormats : {{ .AlternativeOutputFormats }}</li>
+<li>.Aliases : {{ .Aliases }}</li>
+<li>.Content : {{ .Content }}</li>
+<li>.Data : {{ .Data }}</li>
+<li>.Date : {{ .Date }}</li>
+<li>.Description : {{ .Description }}</li>
+<li>.Dir : {{ .Dir }}</li>
+<li>.Draft : {{ .Draft }}</li>
+<li>.ExpiryDate : {{ .ExpiryDate }}</li>
+<li>.File : {{ .File }}</li>
+<li>.FuzzyWordCount : {{ .FuzzyWordCount }}</li>
+<li>.Hugo : {{ .Hugo }}</li>
+<li>.IsHome : {{ .IsHome }}</li>
+<li>.IsNode : {{ .IsNode }}</li>
+<li>.IsPage : {{ .IsPage }}</li>
+<li>.IsTranslated : {{ .IsTranslated }}</li>
+<li>.Keywords : {{ .Keywords }}</li>
+<li>.Kind : {{ .Kind }}</li>
+<li>.Language : {{ .Language }}</li>
+<li>.Lastmod : {{ .Lastmod }}</li>
+<li>.LinkTitle : {{ .LinkTitle }}</li>
+<li>.Next : {{ .Next }}</li>
+<li>.NextInSection : {{ .NextInSection }}</li>
+<li>.OutputFormats : {{ .OutputFormats }}</li>
+<li>.Pages : {{ .Pages }}</li>
+<li>.Permalink : {{ .Permalink }}</li>
+<li>.Plain : {{ .Plain }}</li>
+<li>.PlainWords : {{ .PlainWords }}</li>
+<li>.Prev : {{ .Prev }}</li>
+<li>.PrevInSection : {{ .PrevInSection }}</li>
+<li>.PublishDate : {{ .PublishDate }}</li>
+<li>.RawContent : {{ .RawContent }}</li>
+<li>.ReadingTime : {{ .ReadingTime }}</li>
+<li>.Resources : {{ .Resources }}</li>
+<li>.Ref : { .Ref }</li>
+<li>.RelPermalink : {{ .RelPermalink }}</li>
+<li>.RelRef : { .RelRef }</li>
+<li>.Site : {{ .Site }}</li>
+<li>.Sites : {{ .Sites }}</li>
+<li>.Sites.First : {{ .Sites.First }}</li>
+<li>.Summary : {{ .Summary }}</li>
+<li>.TableOfContents : {{ .TableOfContents }}</li>
+<li>.Title : {{ .Title }}</li>
+<li>.Translations : {{ .Translations }}</li>
+<li>.TranslationKey : {{ .TranslationKey }}</li>
+<li>.Truncated : {{ .Truncated }}</li>
+<li>.Type : {{ .Type }}</li>
+<li>.Weight : {{ .Weight }}</li>
+<li>.WordCount : {{ .WordCount }}</li>
+</ul> -->
+                    <li><a href="{{ .RelPermalink }}">{{ .Language.LanguageName }}: {{ .Title }}</a></li>
+                    {{- end -}}
+                </ul>
+            {{- end -}}
             {{- dict "Content" .Content "Ruby" $params.ruby "Fraction" $params.fraction "Fontawesome" $params.fontawesome | partial "function/content.html" | safeHTML -}}
         </div>
 

@@ -4,25 +4,30 @@ subtitle: ""
 date: {{ .Date }}
 lastmod: {{ .Date }}
 draft: true
-author: ""
-authorLink: ""
 description: ""
 
 tags: []
-categories: []
-
-hiddenFromHomePage: false
-hiddenFromSearch: false
 
 featuredImage: ""
 featuredImagePreview: ""
 
+aliases: []
 toc:
   enable: true
 math:
   enable: false
-lightgallery: false
-license: ""
+lightgallery: true
 ---
 
+<!--
+author: ""
+authorLink: ""
+description: ""
+categories: []
+hiddenFromHomePage: false
+hiddenFromSearch: false
+license: ""
+-->
+
 <!--more-->
+

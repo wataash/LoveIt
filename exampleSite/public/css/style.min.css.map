@@ -1,9 +1,9 @@
 {
 	"version": 3,
 	"file": "style.min.css",
-	"sourceRoot": "/home/wsh/hugo/LoveIt/exampleSite",
+	"sourceRoot": "/home/wsh/usr/hugo/LoveIt/exampleSite",
 	"sources": [
-		"/home/wsh/hugo/LoveIt/assets/css/style.scss",
+		"/home/wsh/usr/hugo/LoveIt/assets/css/style.scss",
 		"../assets/css/_variables.scss",
 		"assets/css/_override.scss",
 		"../assets/css/_mixin/_index.scss",

@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "dark.min.css",
-	"sourceRoot": "/home/wsh/hugo/LoveIt/exampleSite",
+	"sourceRoot": "/home/wsh/usr/hugo/LoveIt/exampleSite",
 	"sources": [
 		"stdin"
 	],
