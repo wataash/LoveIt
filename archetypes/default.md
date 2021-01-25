@@ -1,33 +1,12 @@
 ---
 title: "{{ replace .TranslationBaseName "-" " " | title }}"
-subtitle: ""
 date: {{ .Date }}
 lastmod: {{ .Date }}
-draft: true
-description: ""
-
 tags: []
 
-featuredImage: ""
-featuredImagePreview: ""
-
-aliases: []
-toc:
-  enable: true
-math:
-  enable: false
-lightgallery: true
+draft: true
 ---
 
 <!--
-author: ""
-authorLink: ""
-description: ""
-categories: []
-hiddenFromHomePage: false
-hiddenFromSearch: false
-license: ""
+[](file:///home/wsh/doc/t/web_hugo.md)
 -->
-
-<!--more-->
-
